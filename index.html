@@ -21,11 +21,12 @@
     
     Change your h2 element's style so that its text color is red. -->
 
-    <h2>CatPhotoApp</h2>
+    <h2 style="color: red;">CatPhotoApp</h2>
     <main>
         <p>Click here to view more <a href="#">cat photos</a>.</p>
     
-        <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>    
+        <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+    
         <div>
             <p>Things cats love:</p>
             <ul>
@@ -75,12 +76,17 @@
 
     Delete your h2 element's style attribute, and instead create a CSS style block. Add the necessary CSS to turn all h2 elements blue. -->
 
-    <h2 style="color: red;">CatPhotoApp</h2>
+    <style>
+        h2 {
+            color: blue;
+        }
+    </style>
+    
+    <h2>CatPhotoApp</h2>
     <main>
         <p>Click here to view more <a href="#">cat photos</a>.</p>
     
-        <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
-                alt="A cute orange cat lying on its back."></a>
+        <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
     
         <div>
             <p>Things cats love:</p>
@@ -126,16 +132,17 @@
     Give your h2 element the class attribute with a value of red-text. -->
 
     <style>
-        h2 {
-            color: blue;
+        .red-text {
+            color: red;
         }
     </style>
     
-    <h2>CatPhotoApp</h2>
+    <h2 class="red-text">CatPhotoApp</h2>
+    <h2>Photos of Cats</h2>
     <main>
         <p>Click here to view more <a href="#">cat photos</a>.</p>
     
-        <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+        <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
     
         <div>
             <p>Things cats love:</p>
@@ -162,7 +169,6 @@
             <button type="submit">Submit</button>
         </form>
     </main>
-
     <!-- 4. Style Multiple Elements with a CSS Class
 
     Classes allow you to use the same CSS styles on multiple HTML elements. You can see this by applying your red-text class to the first p element.
@@ -185,9 +191,9 @@
     
     <h2 class="red-text">CatPhotoApp</h2>
     <main>
-        <p>Click here to view more <a href="#">cat photos</a>.</p>
+        <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
     
-        <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+        <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
     
         <div>
             <p>Things cats love:</p>
@@ -228,13 +234,17 @@
         .red-text {
             color: red;
         }
+    
+        p {
+            font-size: 16px;
+        }
     </style>
     
     <h2 class="red-text">CatPhotoApp</h2>
     <main>
         <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
     
-        <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+        <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
     
         <div>
             <p>Things cats love:</p>
@@ -281,6 +291,7 @@
     
         p {
             font-size: 16px;
+            font-family: monospace;
         }
     </style>
     
@@ -288,7 +299,7 @@
     <main>
         <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
     
-        <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+        <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
     
         <div>
             <p>Things cats love:</p>
@@ -338,48 +349,53 @@
 
     Import the Lobster font to your web page. Then, use an element selector to set Lobster as the font-family for your h2 element. -->
 
-    <style>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+      <style>
         .red-text {
-            color: red;
+          color: red;
         }
-    
+      
         p {
-            font-size: 16px;
-            font-family: monospace;
+          font-size: 16px;
+          font-family: monospace;
         }
-    </style>
-    
-    <h2 class="red-text">CatPhotoApp</h2>
-    <main>
+
+        h2 {
+          font-family: Lobster;
+        }
+      </style>
+      
+      <h2 class="red-text">CatPhotoApp</h2>
+      <main>
         <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
-    
-        <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
-    
+      
+        <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+      
         <div>
-            <p>Things cats love:</p>
-            <ul>
-                <li>cat nip</li>
-                <li>laser pointers</li>
-                <li>lasagna</li>
-            </ul>
-            <p>Top 3 things cats hate:</p>
-            <ol>
-                <li>flea treatment</li>
-                <li>thunder</li>
-                <li>other cats</li>
-            </ol>
+          <p>Things cats love:</p>
+          <ul>
+            <li>cat nip</li>
+            <li>laser pointers</li>
+            <li>lasagna</li>
+          </ul>
+          <p>Top 3 things cats hate:</p>
+          <ol>
+            <li>flea treatment</li>
+            <li>thunder</li>
+            <li>other cats</li>
+          </ol>
         </div>
-    
+      
         <form action="https://freecatphotoapp.com/submit-cat-photo">
-            <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
-            <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
-            <label><input type="checkbox" name="personality" checked> Loving</label>
-            <label><input type="checkbox" name="personality"> Lazy</label>
-            <label><input type="checkbox" name="personality"> Energetic</label><br>
-            <input type="text" placeholder="cat photo URL" required>
-            <button type="submit">Submit</button>
+          <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+          <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
+          <label><input type="checkbox" name="personality" checked> Loving</label>
+          <label><input type="checkbox" name="personality"> Lazy</label>
+          <label><input type="checkbox" name="personality"> Energetic</label><br>
+          <input type="text" placeholder="cat photo URL" required>
+          <button type="submit">Submit</button>
         </form>
-    </main>
+      </main>
 
     <!-- 8. Specify How Fonts Should Degrade
 
@@ -400,14 +416,14 @@
 
     Note: If you have the Lobster font installed on your computer, you won't see the degradation because your browser is able to find the font. -->
 
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"> -->
     <style>
         .red-text {
             color: red;
         }
     
         h2 {
-            font-family: Lobster;
+            font-family: Lobster, monospace;
         }
     
         p {
@@ -477,6 +493,10 @@
             font-size: 16px;
             font-family: monospace;
         }
+    
+        .smaller-image {
+            width: 100px;
+        }
     </style>
     
     <h2 class="red-text">CatPhotoApp</h2>
@@ -484,7 +504,7 @@
         <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
     
         <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
-                alt="A cute orange cat lying on its back."></a>
+                alt="A cute orange cat lying on its back." class="smaller-image"></a>
     
         <div>
             <p>Things cats love:</p>
@@ -549,13 +569,20 @@
         .smaller-image {
             width: 100px;
         }
+    
+        .thick-green-border {
+    
+            border-color: green;
+            border-width: 10px;
+            border-style: solid;
+        }
     </style>
     
     <h2 class="red-text">CatPhotoApp</h2>
     <main>
         <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
     
-        <a href="#"><img class="smaller-image" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+        <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat"
                 alt="A cute orange cat lying on its back."></a>
     
         <div>
@@ -611,6 +638,7 @@
             border-color: green;
             border-width: 10px;
             border-style: solid;
+            border-radius: 10px;
         }
     
         .smaller-image {
@@ -622,8 +650,7 @@
     <main>
         <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
     
-        <a href="#"><img class="smaller-image thick-green-border"
-                src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+        <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat"
                 alt="A cute orange cat lying on its back."></a>
     
         <div>
@@ -677,7 +704,7 @@
             border-color: green;
             border-width: 10px;
             border-style: solid;
-            border-radius: 10px;
+            border-radius: 50%;
         }
     
         .smaller-image {
@@ -689,8 +716,7 @@
     <main>
         <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
     
-        <a href="#"><img class="smaller-image thick-green-border"
-                src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+        <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat"
                 alt="A cute orange cat lying on its back."></a>
     
         <div>
@@ -756,15 +782,20 @@
         .smaller-image {
             width: 100px;
         }
+    
+        .silver-background {
+            background-color: silver;
+        }
     </style>
     
     <h2 class="red-text">CatPhotoApp</h2>
     <main>
         <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
     
-        <a href="#"><img class="smaller-image thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+        <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat"
+                alt="A cute orange cat lying on its back."></a>
     
-        <div>
+        <div class="silver-background">
             <p>Things cats love:</p>
             <ul>
                 <li>cat nip</li>
@@ -789,7 +820,7 @@
             <button type="submit">Submit</button>
         </form>
     </main>
-
+    
     <!-- 14. Set the id of an Element
 
     In addition to classes, each HTML element can also have an id attribute.
@@ -839,7 +870,8 @@
     <main>
         <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
     
-        <a href="#"><img class="smaller-image thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+        <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat"
+                alt="A cute orange cat lying on its back."></a>
     
         <div class="silver-background">
             <p>Things cats love:</p>
@@ -856,7 +888,7 @@
             </ol>
         </div>
     
-        <form action="https://freecatphotoapp.com/submit-cat-photo">
+        <form action="https://freecatphotoapp.com/submit-cat-photo" id="cat-photo-form">
             <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
             <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
             <label><input type="checkbox" name="personality" checked> Loving</label>
@@ -912,14 +944,17 @@
         .silver-background {
             background-color: silver;
         }
+    
+        #cat-photo-form {
+            background-color: green;
+        }
     </style>
     
     <h2 class="red-text">CatPhotoApp</h2>
     <main>
         <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
     
-        <a href="#"><img class="smaller-image thick-green-border"
-                src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+        <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat"
                 alt="A cute orange cat lying on its back."></a>
     
         <div class="silver-background">
@@ -991,7 +1026,7 @@
         .blue-box {
             background-color: blue;
             color: #fff;
-            padding: 10px;
+            padding: 20px;
         }
     </style>
     <h5 class="injected-text">margin</h5>
@@ -1040,7 +1075,7 @@
             background-color: blue;
             color: #fff;
             padding: 20px;
-            margin: 10px;
+            margin: 20px;
         }
     </style>
     <h5 class="injected-text">margin</h5>
@@ -1089,7 +1124,7 @@
             background-color: blue;
             color: #fff;
             padding: 20px;
-            margin: 20px;
+            margin: -15px;
         }
     </style>
     
@@ -1136,6 +1171,10 @@
         .blue-box {
             background-color: blue;
             color: #fff;
+            padding-top: 40px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 40px;
         }
     </style>
     <h5 class="injected-text">margin</h5>
@@ -1183,6 +1222,10 @@
         .blue-box {
             background-color: blue;
             color: #fff;
+            margin-top: 40px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left: 40px;
         }
     </style>
     <h5 class="injected-text">margin</h5>
@@ -1229,6 +1272,7 @@
         .blue-box {
             background-color: blue;
             color: #fff;
+            padding: 40px 20px 20px 40px;
         }
     </style>
     <h5 class="injected-text">margin</h5>
@@ -1236,7 +1280,7 @@
     <div class="box yellow-box">
         <h5 class="box red-box">padding</h5>
         <h5 class="box blue-box">padding</h5>
-    </div>
+    </div>    
 
     <!-- 22. Use Clockwise Notation to Specify the Margin of an Element
 
@@ -1277,6 +1321,7 @@
         .blue-box {
             background-color: blue;
             color: #fff;
+            margin: 40px 20px 20px 40px;
         }
     </style>
     <h5 class="injected-text">margin</h5>
@@ -1329,14 +1374,18 @@
         .silver-background {
             background-color: silver;
         }
+    
+        [type='checkbox'] {
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
     </style>
     
     <h2 class="red-text">CatPhotoApp</h2>
     <main>
         <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
     
-        <a href="#"><img class="smaller-image thick-green-border"
-                src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+        <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat"
                 alt="A cute orange cat lying on its back."></a>
     
         <div class="silver-background">
@@ -1398,7 +1447,7 @@
         .red-box {
             background-color: red;
             margin: 20px 40px 20px 40px;
-    
+            padding: 1.5em;
         }
     
         .green-box {
@@ -1412,6 +1461,7 @@
         <h5 class="box red-box">padding</h5>
         <h5 class="box green-box">padding</h5>
     </div>
+    
 
     <!-- 25. Style the HTML Body Element
 
@@ -1428,7 +1478,9 @@
     } -->
 
     <style>
-
+        body {
+            background-color: black;
+        }
     </style>
 
     <!-- 26. Inherit Styles from the Body Element
@@ -1445,10 +1497,12 @@
 
     <style>
         body {
-          background-color: black;
+            background-color: black;
+            color: green;
+            font-family: monospace;
         }
-      
     </style>
+    <h1>Hello World</h1>
 
     <!-- 27. Prioritize One Style Over Another
 
@@ -1468,8 +1522,12 @@
             font-family: monospace;
             color: green;
         }
+    
+        .pink-text {
+            color: pink;
+        }
     </style>
-    <h1>Hello World!</h1>
+    <h1 class="pink-text">Hello World!</h1>
 
     <!-- 28. Override Styles in Subsequent CSS
 
@@ -1498,8 +1556,12 @@
         .pink-text {
             color: pink;
         }
+    
+        .blue-text {
+            color: blue;
+        }
     </style>
-    <h1 class="pink-text">Hello World!</h1>
+    <h1 class="pink-text blue-text">Hello World!</h1>
 
     <!-- 29. Override Class Declarations by Styling ID Attributes
 
@@ -1522,6 +1584,10 @@
     Note: It doesn't matter whether you declare this CSS above or below pink-text class, since the id attribute will always take precedence. -->
 
     <style>
+        #orange-text {
+            color: orange;
+        }
+    
         body {
             background-color: black;
             font-family: monospace;
@@ -1536,7 +1602,7 @@
             color: blue;
         }
     </style>
-    <h1 class="pink-text blue-text">Hello World!</h1>
+    <h1 class="pink-text blue-text" id="orange-text">Hello World!</h1>
 
     <!-- 30. Override Class Declarations with Inline Styles
 
@@ -1568,7 +1634,7 @@
             color: blue;
         }
     </style>
-    <h1 id="orange-text" class="pink-text blue-text">Hello World!</h1>
+    <h1 id="orange-text" class="pink-text blue-text" style="color:white;">Hello World!</h1>
 
     <!-- 31. Override All Other Styles by using Important
 
@@ -1598,7 +1664,7 @@
         }
     
         .pink-text {
-            color: pink;
+            color: pink !important;
         }
     
         .blue-text {
@@ -1623,7 +1689,7 @@
 
     <style>
         body {
-            background-color: black;
+            background-color: #000000;
         }
     </style>
 
@@ -1649,19 +1715,19 @@
 
     <style>
         .red-text {
-            color: black;
+            color: #FF0000;
         }
     
         .green-text {
-            color: black;
+            color: #00FF00;
         }
     
         .dodger-blue-text {
-            color: black;
+            color: #1e90ff;
         }
     
         .orange-text {
-            color: black;
+            color: #ffa500;
         }
     </style>
     
@@ -1685,19 +1751,19 @@
 
     <style>
         .red-text {
-            color: #000000;
+            color: #f00;
         }
     
         .fuchsia-text {
-            color: #000000;
+            color: #f0f;
         }
     
         .cyan-text {
-            color: #000000;
+            color: #0ff;
         }
     
         .green-text {
-            color: #000000;
+            color: #0f0;
         }
     </style>
     
@@ -1708,6 +1774,7 @@
     <h1 class="cyan-text">I am cyan!</h1>
     
     <h1 class="green-text">I am green!</h1>
+    
 
     <!-- 35. Use RGB values to Color Elements
 
@@ -1733,7 +1800,7 @@
 
     <style>
         body {
-            background-color: #F00;
+            background-color: rgb(0, 0, 0);
         }
     </style>
 
@@ -1751,19 +1818,19 @@
 
     <style>
         .red-text {
-            color: #000000;
+            color: rgb(255, 0, 0);
         }
     
         .orchid-text {
-            color: #000000;
+            color: rgb(218, 112, 214);
         }
     
         .sienna-text {
-            color: #000000;
+            color: rgb(160, 82, 45);
         }
     
         .blue-text {
-            color: #000000;
+            color: rgb(0, 0, 255);
         }
     </style>
     
@@ -1787,9 +1854,9 @@
         .penguin {
     
             /* Only change code below this line */
-            --penguin-skin: black;
-            --penguin-belly: gray;
-            --penguin-beak: yellow;
+            --penguin-skin: gray;
+            --penguin-belly: white;
+            --penguin-beak: orange;
             /* Only change code above this line */
     
             position: relative;
@@ -1996,7 +2063,7 @@
     <style>
         .penguin {
             /* Only change code below this line */
-    
+            --penguin-skin: gray;
             /* Only change code above this line */
             position: relative;
             margin: auto;
@@ -2215,7 +2282,7 @@
             left: 25%;
     
             /* Change code below this line */
-            background: black;
+            background: var(--penguin-skin);
             /* Change code above this line */
     
             width: 50%;
@@ -2228,7 +2295,7 @@
             left: 23.5%;
     
             /* Change code below this line */
-            background: black;
+            background: var(--penguin-skin);
             /* Change code above this line */
     
             width: 53%;
@@ -2241,7 +2308,7 @@
             left: -5%;
     
             /* Change code below this line */
-            background: black;
+            background: var(--penguin-skin);
             /* Change code above this line */
     
             width: 30%;
@@ -2256,7 +2323,7 @@
             left: 75%;
     
             /* Change code below this line */
-            background: black;
+            background: var(--penguin-skin);
             /* Change code above this line */
     
             width: 30%;
@@ -2441,7 +2508,7 @@
             left: 25%;
     
             /* Change code below this line */
-            background: var(--pengiun-skin);
+            background: var(--pengiun-skin, black);
             /* Change code above this line */
     
             width: 50%;
@@ -2454,7 +2521,7 @@
             left: 23.5%;
     
             /* Change code below this line */
-            background: var(--pengiun-skin);
+            background: var(--pengiun-skin, black);
             /* Change code above this line */
     
             width: 53%;
@@ -2644,7 +2711,7 @@
         }
     
         .red-box {
-    
+            background: red;
             background: var(--red-color);
             height: 200px;
             width: 200px;
@@ -2665,7 +2732,7 @@
     <style>
         :root {
             /* Only change code below this line */
-    
+            --penguin-belly: pink;
             /* Only change code above this line */
         }
     
@@ -2885,7 +2952,7 @@
     
         .penguin {
             /* Only change code below this line */
-    
+            --penguin-belly: white;
             /* Only change code above this line */
             position: relative;
             margin: auto;
@@ -3094,7 +3161,8 @@
         @media (max-width: 350px) {
             :root {
                 /* Only change code below this line */
-    
+                --penguin-size: 200px;
+                --penguin-skin: black;
                 /* Only change code above this line */
             }
         }
